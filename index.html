@@ -11,205 +11,213 @@
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Title page</title>
 
-<link href="./main.d8e0d294.css" rel="stylesheet"></head>
+  <link href="./main.d8e0d294.css" rel="stylesheet">
+</head>
 
 <body class="">
 
-<!-- Add your content of header -->
-<div class="background-color-layer" style="background-image: url('assets/images/img-01.jpg')"
-></div>
-<main class="content-wrapper">
-  <header class="white-text-container section-container">
-    <div class="text-center">
-      <h1>CS 184: Computer Graphics and Imaging, Spring 2020</h1>
-      <h1>Final Project: Point Cloud to Mesh</h1>
-      <p>Jordan Knox, Brian Fu, Mickey Matiss, Kendall Choy</p>
+  <!-- Add your content of header -->
+  <div class="background-color-layer" style="background-image: url('assets/images/img-01.jpg')"></div>
+  <main class="content-wrapper">
+    <header class="white-text-container section-container">
+      <div class="text-center">
+        <h1>CS 184: Computer Graphics and Imaging, Spring 2020</h1>
+        <h1>Final Project: Point Cloud to Mesh</h1>
+        <p>Jordan Knox, Brian Fu, Mickey Matiss, Kendall Choy</p>
+      </div>
+    </header>
+
+
+
+    <!-- Add your site or app content here -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="card">
+            <div class="card-block">
+              <h2>Abstract</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <p><img src="images/image1.png" class="img-responsive" alt=""></p>
+                </div>
+                <div class="col-md-8">
+
+                  <p>Our goal for this project is to create a program that is capable of taking in a .ply file of
+                    vertices that will then
+                    convert it into a mesh and then rendering the mesh. The .ply file is a point cloud, which is usually
+                    the output produced
+                    by 3D scanners. Our first step is reading the .ply file and computing the normals for each vertex in
+                    the cloud. The next
+                    step is to run the ball pivot algorithm on the points and normals together in order to generate the
+                    faces. Finally, we
+                    put together the vertices edges and faces in order to render the mesh. We used the browser
+                    application threeJS in order
+                    to render our finished mesh.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-block">
+              <h2>Technical Approach</h2>
+
+              <div class="work-experience">
+                <h3 class="h5 date-title">Step One: <a href="http://en.orson.io"
+                    title="Create professionnal website">Parse .ply File</a></h3>
+
+                <p>parsing the ply file for the vertices</p>
+              </div>
+
+              <div class="work-experience">
+                <h3 class="h5 date-title">Step 2: <a href="http://mashup-template.com" title="">Calculating Normals</a>
+                </h3>
+
+                <p>using the data from the ply file to calculate the vertex normals</p>
+              </div>
+
+              <div class="work-experience">
+                <h3 class="h5 date-title">Step 3: <a href="http://en.orson.io" title="Create professionnal website">I
+                    dont know what to put here, whatever brian and mickey are doing</a></h3>
+
+                <p></p>
+              </div>
+
+              <div class="work-experience">
+                <h3 class="h5 date-title">Step 4: <a href="http://en.orson.io" title="Create professionnal website">I
+                    think this is when we do the ball pivot algorithm</a></h3>
+
+                <p></p>
+              </div>
+
+              <div class="work-experience">
+                <h3 class="h5 date-title">Step 5: <a href="http://en.orson.io"
+                    title="Create professionnal website">Rendering the Mesh</a></h3>
+
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-block">
+              <h2>Results</h2>
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="./assets/images/img-05.jpg" class="img-responsive" alt="...">
+                    <div class="carousel-caption">
+                      <h3 class="h5">Jules for Bastion</h3>
+                      <p>2017</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./assets/images/img-06.jpg" class="img-responsive" alt="...">
+                    <div class="carousel-caption">
+                      <h3 class="h5">Jules for Bastion</h3>
+                      <p>2017</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/images/img-08.jpg" class="img-responsive" alt="...">
+                    <div class="carousel-caption">
+                      <h3 class="h5">Jules for Bastion</h3>
+                      <p>2017</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-block">
+              <h2>References</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="education-experience">
+                    <h3 class="h5 date-title"><a href="https://lidarwidgets.com/samples/bpa_tvcg.pdf"
+                        title="Create professionnal website">Ball Pivot Algorithim Paper</a></h3>
+                  </div>
+
+                </div>
+                <div class="col-md-4">
+                  <div class="education-experience">
+                    <h3 class="h5 date-title"><a href="http://graphics.stanford.edu/data/3Dscanrep/"
+                        title="Create professionnal website">Stanford Point Cloud Repository</a></h3>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="education-experience">
+                    <h3 class="h5 date-title"><a href="https://threejs.org/editor/"
+                        title="Create professionnal website">ThreeJS</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-block">
+              <h2>Contributions</h2>
+              <p>We all worked on the project together, had significant inputs during all parts of the project, and were
+                contributing intellectually to the code.</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="education-experience">
+                    <h3 class="h5 date-title">Mickey Matiss: </h3>
+                    <p>Majority of the coding of the ball pivot algorithm.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="education-experience">
+                    <h3 class="h5 date-title">Brian Fu: </h3>
+                    <p>Majority of the coding for the .ply file parsing.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="education-experience">
+                    <h3 class="h5 date-title">Jordan Knox</h3>
+                    <p>Wrote and formatted all of the websites, videos, and presentations.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="education-experience">
+                    <h3 class="h5 date-title">Kendall Choy</h3>
+                    <p>Majority of the debugging and wrote the slides for the milestone powerpoint.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-  </header>
 
-
-
-<!-- Add your site or app content here -->
- 
- <div class="container">
-   <div class="row">
-     <div class="col-xs-12">
-
-        <div class="card">
-          <div class="card-block">
-            <h2>Abstract</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <p><img src="images/image1.png" class="img-responsive" alt=""></p>
-              </div>
-              <div class="col-md-8">
-
-              <p>Our goal for this project is to create a program that is capable of taking in a .ply file of vertices that will then
-              convert it into a mesh and then rendering the mesh. The .ply file is a point cloud, which is usually the output produced
-              by 3D scanners. Our first step is reading the .ply file and computing the normals for each vertex in the cloud. The next
-              step is to run the ball pivot algorithm on the points and normals together in order to generate the faces. Finally, we
-              put together the vertices edges and faces in order to render the mesh. We used the browser application threeJS in order
-              to render our finished mesh.</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-block">
-            <h2>Technical Approach</h2>
-
-            <div class="work-experience">
-              <h3 class="h5 date-title">Step One: <a href="http://en.orson.io" title="Create professionnal website">Parse .ply File</a></h3>
-              
-              <p>parsing the ply file for the vertices</p>
-            </div>
-
-            <div class="work-experience">
-              <h3 class="h5 date-title">Step 2: <a href="http://mashup-template.com" title="">Calculating Normals</a></h3>
-              
-              <p>using the data from the ply file to calculate the vertex normals</p>
-            </div>
-
-            <div class="work-experience">
-              <h3 class="h5 date-title">Step 3: <a href="http://en.orson.io"
-                  title="Create professionnal website">I dont know what to put here, whatever brian and mickey are doing</a></h3>
-            
-              <p></p>
-            </div>
-
-            <div class="work-experience">
-              <h3 class="h5 date-title">Step 4: <a href="http://en.orson.io"
-                  title="Create professionnal website">I think this is when we do the ball pivot algorithm</a></h3>
-            
-              <p></p>
-            </div>
-
-            <div class="work-experience">
-              <h3 class="h5 date-title">Step 5: <a href="http://en.orson.io"
-                  title="Create professionnal website">Rendering the Mesh</a></h3>
-            
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="card-block">
-            <h2>Results</h2>
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        
-        
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="./assets/images/img-05.jpg" class="img-responsive" alt="...">
-                  <div class="carousel-caption">
-                    <h3 class="h5">Jules for Bastion</h3>
-                    <p>2017</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="./assets/images/img-06.jpg" class="img-responsive" alt="...">
-                  <div class="carousel-caption">
-                    <h3 class="h5">Jules for Bastion</h3>
-                    <p>2017</p>
-                  </div>
-                </div>
-        
-                <div class="item">
-                  <img src="./assets/images/img-08.jpg" class="img-responsive" alt="...">
-                  <div class="carousel-caption">
-                    <h3 class="h5">Jules for Bastion</h3>
-                    <p>2017</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              </ol>
-        
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-block">
-            <h2>References</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="education-experience">
-                  <h3 class="h5 date-title">Ball Pivot Algorithim Paper</h3>
-                  <a href="https://lidarwidgets.com/samples/bpa_tvcg.pdf">Link</a>
-                </div>
-                
-              </div>
-              <div class="col-md-4">
-                <div class="education-experience">
-                  <h3 class="h5 date-title">Stanford Point Cloud Repository</h3>
-                  <a href="http://graphics.stanford.edu/data/3Dscanrep/">Link</a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="education-experience">
-                  <h3 class="h5 date-title">ThreeJS</h3>
-                  <a href="https://threejs.org/editor/">Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="card-block">
-            <h2>Contributions</h2>
-            <p>We all worked on the project together, had significant inputs during all parts of the project, and were contributing intellectually to the code.</p>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="education-experience">
-                  <h3 class="h5 date-title">Mickey Matiss: </h3>
-                  <p>Majority of the coding of the ball pivot algorithm.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="education-experience">
-                  <h3 class="h5 date-title">Brian Fu: </h3>
-                  <p>Majority of the coding for the .ply file parsing.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="education-experience">
-                  <h3 class="h5 date-title">Jordan Knox</h3>
-                  <p>Wrote and formatted all of the websites, videos, and presentations.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="education-experience">
-                  <h3 class="h5 date-title">Kendall Choy</h3>
-                  <p>Majority of the debugging and wrote the slides for the milestone powerpoint.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-     </div>
-   </div>
- </div>
-
-</main>
-<!-- <footer class="footer-container white-text-container text-center">
+  </main>
+  <!-- <footer class="footer-container white-text-container text-center">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -238,12 +246,12 @@
   </div>
 </footer> -->
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     scrollRevelation('.card');
-  });
-</script>
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      scrollRevelation('.card');
+    });
+  </script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 
 <script>
   (function (i, s, o, g, r, a, m) {
@@ -256,6 +264,8 @@
   ga('send', 'pageview');
 </script>
 
---><script type="text/javascript" src="./main.bc58148c.js"></script></body>
+-->
+  <script type="text/javascript" src="./main.bc58148c.js"></script>
+</body>
 
 </html>
