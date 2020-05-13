@@ -72,22 +72,36 @@
               <h2>Technical Approach</h2>
 
               <div class="work-experience">
-                <h3 class="h5 date-title">Step One: Parse .ply File</h3>
-                <p>parsing the ply file for the vertices</p>
+                <h3 class="h5 date-title">.ply Files</h3>
+                <p>The first issue we had to tackle was dealing with the format of the point clouds. Most point clouds are found in .ply
+                   files. The .ply files are fairly easy to read and understand. We decided to use a repository from Stanford as our
+                   source for the majority of our point clouds. The .ply files on that repository were comprised of vertices and faces.
+                   We needed the vertices and the vertex normals in order to run our ball pivot algorithm. Then we erased the original faces
+                   from the .ply file. This gave us a .ply file that we could use the ball pivot algorithm on to generate a triangle mesh.
+                </p>
               </div>
 
               <div class="work-experience">
-                <h3 class="h5 date-title">Step 2: Calculating Normals</h3>
-                <p>using the data from the ply file to calculate the vertex normals</p>
+                <h3 class="h5 date-title">Starting With Project 2</h3>
+                <p>We had originally intended to use our project 2 code as the starter code for this project. It made sense, as this project's
+                   last step is to render a mesh, and that's what the project 2 end product was. But, we hit a few snags in that plan. The first
+                   snag was the format of the point cloud data we could find. All of the point clouds we could find were in .ply file format.
+                   But the meshedit starter code took in meshes in .dae file format. We tried a few solutions to the conversion of .ply to .dae
+                   but none of them worked very well and we did not want to spend hours learning to write our own .dae files, so we decided to
+                   move away from the project 2 code as the base for our renderer. We looked at a few other ways to render the meshes we were
+                   going to generate. Our first thought was to use a program called Blender, but upon further investigation, we realized that
+                   blender was a bit too advanced than we needed for our render, and the finished products looked somewhat odd. Next we turned
+                   to a program called ThreeJS and that's what we eventually used to render our finished mesh.
+                </p>
               </div>
 
               <div class="work-experience">
-                <h3 class="h5 date-title">Step 3: dont know what to put here, whatever brian and mickey are doing</h3>
+                <h3 class="h5 date-title">dont know what to put here, whatever brian and mickey are doing</h3>
                 <p></p>
               </div>
 
               <div class="work-experience">
-                <h3 class="h5 date-title">Step 4: think this is when we do the ball pivot algorithm</h3>
+                <h3 class="h5 date-title">The Ball Pivot Algorithm</h3>
                 <p>The Ball-Pivoting Algorithm is named for the simulated use of a virtual ball to help reconstruct a mesh from a
                 point cloud. To construct the mesh from the point cloud, you first assume that the cloud consists of points from the surface
                 of the object we are trying to make a mesh for.</p>
@@ -101,12 +115,12 @@
                    mesh is fully formed.
                 </p>
                 <img src="images/image2.png" class="img-responsive" alt="">
-                <p>Here is a visual for how the ball moves along the points.</p>
+                <p>Here is a 2D visual for how the ball moves along the points.</p>
                 
               </div>
 
               <div class="work-experience">
-                <h3 class="h5 date-title">Step 5: Rendering the Mesh</h3>
+                <h3 class="h5 date-title">Rendering the Mesh</h3>
                 <p></p>
               </div>
             </div>
